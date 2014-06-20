@@ -6,11 +6,11 @@
     <meta charset="utf-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no" />
-    <title>Firefeed - by Firebase</title>
-    <meta name="description" content="An open source Twitter clone built with Firebase">
+    <title>Fluttr Powered by Firebase</title>
+    <meta name="description" content="A non monetary crowd sourcing platform built with Firebase">
     <link href="img/favicon.png" rel="shortcut icon" />
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   </head>
 
@@ -20,17 +20,17 @@
       <header id="header">
       </header>
 
-      <script id="tmpl-index-header" type="text/html">
-        <a target="_blank" href="http://github.com/firebase/firefeed" class="ribbon-github">
-          <img src="img/ribbon-github.png" alt="Fork me on GitHub" />
-        </a>
-        <a target="_blank" href="http://firebase.github.io" class="ribbon-curl">
-          <img src="img/curl-static.gif" width="200" height="200" alt="Official example">
-        </a>
-      </script>
+      <!-- <script id="tmpl-index-header" type="text/html">
+       <a target="_blank" href="http://github.com/firebase/firefeed" class="ribbon-github">
+           <img src="img/ribbon-github.png" alt="Fork me on GitHub" />
+         </a>
+         <a target="_blank" href="http://firebase.github.io" class="ribbon-curl">
+           <img src="img/curl-static.gif" width="200" height="200" alt="Official example">
+         </a>
+       </script> -->
       <script id="tmpl-page-header" type="text/html">
         <div class="wrapper cf">
-          <h1 class="logo"><a href="#" id="top-logo"><img src="img/wordmark.png" alt="Firefeed" /></a></h1>
+          <!-- <h1 class="logo"><a href="#" id="top-logo"><img src="img/wordmark.png" alt="Fluttr" /></a></h1> (THIS IS THE SMALL TOP BAR) -->
           <nav>
             <a id="search-button" href="#">Search</a>
             {{#user}}
@@ -56,14 +56,13 @@
 
       <script id="tmpl-index-content" type="text/html">
         <div class="threefifth center aligncenter">
-          <img src="img/logo.png" />
+         <!-- <img src="img/logo.png" /> (THIS IS THE SMALL ICON ABOVE LOGO IF NEEDED) -->
           <hr style="visibility: hidden;">
-          <h1 class="main-heading"><img src="img/wordmark-large.png" alt="Firefeed" /></h1>
+          <h1 class="main-heading"><img src="img/logo1.png" alt="Fluttr" /></h1>
           <h2 class="subheading">
-            An <a target="_blank" href="http://github.com/firebase/firefeed">open source</a>
-            Twitter clone built with <a target="_blank" href="https://firebase.com">Firebase</a>.
+            A non monetary crowd sourcing platform for Ideas.
           </h2>
-          <p class="big-copy pushv8">Feel free to use and modify this in your own products and projects!</p>
+          <p class="big-copy pushv8">Share an idea and start a new project today!</p>
 
           <div id="login-div" class="pushv4">
             <a id="login-button" href="#" class="btn clean">
@@ -73,10 +72,10 @@
           </div>
 
           <div class="pushv4">
-            <a href="about.html" class="btn default pushv4">Read more about Firefeed</a>
+            <a href="about.html" class="btn default pushv4">About Us</a>
           </div>
 
-          <h2 class="subheading">
+          <!-- <h2 class="subheading">
             Also available on <a target="_blank" href="http://github.com/firebase/iFirefeed">iOS</a>
           </h2>
           <div class="pushv4">
@@ -84,11 +83,11 @@
                target="itunes_store"
                style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/images/web/linkmaker/badge_appstore-lrg.svg);}">
                </a>
-          </div>
+          </div> (INFO FOR AVAILABILITY ON iOS)-->
 
           <hr/>
 
-          <h2 class="subheading">Latest Sparks</h2>
+          <h2 class="subheading">Latest Ideas</h2>
           <ul id="spark-index-list" class="item-list">
           </ul>
         </div>
@@ -111,18 +110,18 @@
             </div>
           </div>
           <div class="field">
-            <textarea id="spark-input" class="text" rows="4" cols="10" placeholder="Share an update"></textarea>
-          </div>
+            <textarea id="spark-input" class="text" rows="4" cols="10" placeholder="Submit an idea"></textarea>
+          </div> <!-- IDEA BOX!!!! -->
           <small class="field-help"><span id="c-count"></span> characters remaining</small>
           <div id="spark-button-div">
-            <a id="spark-button" href="#" class="btn default full pushv4">Update Status</a>
+            <a id="spark-button" href="#" class="btn default full pushv4">Post Idea</a>
           </div>
 
           <div class="separator pushv4"></div>
 
-          <div id="suggested-users">
-            <h3>We suggest you follow:</h3>
-          </div>
+          <!-- <div id="suggested-users">
+             <h3>We suggest you follow:</h3>
+           </div> -->
         </div>
         <div class="twothird">
           <ul id="spark-timeline-list" class="item-list">
@@ -179,14 +178,14 @@
           </div>
           <ul id="spark-profile-list" class="item-list third left"></ul>
           <br/>
-          <div class="profile-column profile-column-left">
+          <!-- <div class="profile-column profile-column-left">
             <h3>Followers</h3>
             <ul id="follower-profile-list" class="item-list third center"></ul>
           </div>
           <div class="profile-column profile-column-right">
             <h3>Following</h3>
             <ul id="followee-profile-list" class="item-list third right"></ul>
-          </div>
+          </div> (DO WE WANT FOLLOWER/FOLLOWEE LIST??) -->
         </div>
       </script>
 
@@ -263,7 +262,7 @@
     <footer id="footer">
       <ul>
         <li id="about-link"><a href="about.html">About</a></li>
-        <li>Follow <a href="//twitter.com/firebase" target="_blank">@Firebase</a></li>
+        <li>Follow <a href="//twitter.com/#" target="_blank">@MAKETWITTER</a></li>
       </ul>
     </footer>
 

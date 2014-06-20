@@ -11,6 +11,7 @@
  *                                   (Useful for testing only)
  * @return   {Firefeed}
  */
+
 function Firefeed(baseURL, newContext) {
   var self = this;
   this._name = null;
@@ -29,8 +30,8 @@ function Firefeed(baseURL, newContext) {
   if (!baseURL || typeof baseURL != "string") {
     throw new Error("Invalid baseURL provided");
   }
-  this._firebase = new Firebase(
-    baseURL, newContext || false ? new Firebase.Context() : null
+  this._firebase = new Firebase('https://crowdwise.firebaseio.com/'
+    , newContext || false ? new Firebase.Context() : null
   );
 
   this._authHandlers = [];
