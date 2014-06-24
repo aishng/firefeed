@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no" />
-    <title>Fluttr Powered by Firebase</title>
+    <title>Fluttr</title>
     <meta name="description" content="A non monetary crowd sourcing platform built with Firebase">
     <link href="img/favicon.png" rel="shortcut icon" />
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -88,7 +88,11 @@
           <hr/>
 
           <h2 class="subheading">Latest Ideas</h2>
-          <ul id="spark-index-list" class="item-list">
+          <ul id="spark-index-list" class=" article item-list">
+              <a href="voteup"   class="vote up"  >&#8593;</a>
+              <span>||</span>
+              <a href="votedown" class="vote down">&#8595;</a>
+              <!-- ...the contents of the item... -->
           </ul>
         </div>
       </script>
@@ -112,6 +116,10 @@
           <div class="field">
             <textarea id="spark-input" class="text" rows="4" cols="10" placeholder="Submit an idea"></textarea>
           </div> <!-- IDEA BOX!!!! -->
+          <div id="hashtagBox" contenteditable="true" placeholder="#hashtags">
+          </div> <!-- HASHTAG BOX!!!! -->
+          <input type="hidden" name="text"/>
+          <button onclick="logHashList();">Alert List of Hashtags</button>
           <small class="field-help"><span id="c-count"></span> characters remaining</small>
           <div id="spark-button-div">
             <a id="spark-button" href="#" class="btn default full pushv4">Post Idea</a>
@@ -124,7 +132,11 @@
            </div> -->
         </div>
         <div class="twothird">
-          <ul id="spark-timeline-list" class="item-list">
+          <ul id="spark-timeline-list" class="article item-list">
+              <a href="voteup"   class="vote up"  >&#8593;</a>
+              <span>||</span>
+              <a href="votedown" class="vote down">&#8595;</a>
+              <!-- ...the contents of the item... -->
           </ul>
         </div>
       </script>
@@ -287,6 +299,7 @@
     <script src="js/firefeed-search.js"></script>
     <script src="js/firefeed.js"></script>
     <script src="js/firefeed-ui.js"></script>
+    <script src="js/additional.js"></script>
     
     
     <!-- Google Analytics Tracking, change this for your website-->

@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/* Ashley Added
+============================================================ */
+
+.main-heading img {
+  border-radius: 6px;
+  border: 1px solid #27A9E1;
+}
 /* Reset
 ============================================================ */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
@@ -167,7 +174,7 @@ img{
 /* Header
 ============================================================ */
 #header{
-  background: #3399FF; //CHANGE TO FLUTTER BLUE
+  background: #27A9E1;
   border-bottom: 1px solid #FFF;
   border-top: 1px solid #FFF5D9;
   font-family: 'Proxima Nova Bold', Arial, Helvetica, sans-serif;
@@ -232,11 +239,11 @@ h2.subheading a{
   font-weight: normal;
 }
 
-h2.subheading a:hover{color: #7B5F11;} //CHANGE TO FLUTTER BLUE
+h2.subheading a:hover{color: #27A9E1;}
 
 h3,
 .title{
-  color: #B89A47; //CHANGE TO FLUTTER BLUE
+  color: #27A9E1; 
   font-family: 'Proxima Nova Bold', Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -266,7 +273,7 @@ h3,
 }
 
 .avatar{
-  border: 1px solid #CFBE91; //CHANGE TO FLUTTER BLUE
+  border: 1px solid #27A9E1; 
   border-radius: 6px;
   overflow: hidden;
   width: 64px;
@@ -277,14 +284,14 @@ h3,
 .avatar img{width: 100%;}
 
 .separator{
-  border-top: 1px solid #E5DBC0; //CHANGE TO FLUTTER BLUE
+  border-top: 1px solid #27A9E1; 
   clear: both;
   margin-bottom: 20px;
 }
 
 .item-list li{
   background: #FFF;
-  border: 1px solid #CCBA8B; //CHANGE TO FLUTTER BLUE
+  border: 1px solid #27A9E1; 
   border-bottom: 0 none;
   padding: 10px 15px;
 }
@@ -292,7 +299,7 @@ h3,
 .item-list li:first-child{border-radius: 6px 6px 0 0;}
 
 .item-list li:last-child{
-  border-bottom: 1px solid #CCBA8B; //CHANGE TO FLUTTER BLUE
+  border-bottom: 1px solid #27A9E1; 
   border-radius: 0 0 6px 6px;
 }
 
@@ -307,7 +314,7 @@ h3,
 
 .comment{
   background: #FFF;
-  border: 1px solid #CCBA8B; //CHANGE TO FLUTTER BLUE
+  border: 1px solid #27A9E1; 
   border-radius: 6px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1) inset;
   padding: 20px;
@@ -366,7 +373,7 @@ label.checkbox span{vertical-align: middle;}
 label.checkbox input{margin-right: 5px;}
 
 .text{
-  border: 1px solid #CCBA8B; //CHANGE TO FLUTTER BLUE
+  border: 1px solid #27A9E1; 
   border-radius: 6px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1) inset;
   -moz-box-sizing: border-box;
@@ -402,7 +409,7 @@ label.checkbox input{margin-right: 5px;}
 }
 
 .editable:hover {
-  border: 1px solid #CCBA8B; //CHANGE TO FLUTTER BLUE
+  border: 1px solid #27A9E1; 
   border-radius: 3px;
   padding: 2px;
 }
@@ -441,8 +448,8 @@ label.checkbox input{margin-right: 5px;}
   text-align: center;
 }
 
-.btn.default{ //BUTTTON!!!!
-  background: #FDC325; //CHANGE TO FLUTTER BLUE!?
+.btn.default{
+  background: #27A9E1; 
   background: -moz-linear-gradient(top, #FDC325, #CB9C1D);
   background: -ms-linear-gradient(top, #FDC325, #CB9C1D);
   background: -o-linear-gradient(top, #FDC325, #CB9C1D);
