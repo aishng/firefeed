@@ -88,11 +88,7 @@
           <hr/>
 
           <h2 class="subheading">Latest Ideas</h2>
-          <ul id="spark-index-list" class=" article item-list">
-              <a href="voteup"   class="vote up"  >&#8593;</a>
-              <span>||</span>
-              <a href="votedown" class="vote down">&#8595;</a>
-              <!-- ...the contents of the item... -->
+          <ul id="spark-index-list" class="item-list">
           </ul>
         </div>
       </script>
@@ -132,10 +128,10 @@
            </div> -->
         </div>
         <div class="twothird">
-          <ul id="spark-timeline-list" class="article item-list">
-              <a href="voteup"   class="vote up"  >&#8593;</a>
+          <ul id="spark-timeline-list" class="item-list">
+              <a href="voteup"   class="vote up"  >UP</a>
               <span>||</span>
-              <a href="votedown" class="vote down">&#8595;</a>
+              <a href="votedown" class="vote down">DOWN</a>
               <!-- ...the contents of the item... -->
           </ul>
         </div>
@@ -171,8 +167,14 @@
       <script id="tmpl-spark-content" type="text/html">
         <div class="threefifth center aligncenter pushdn4">
           <div class="comment pushv6">
-            <div class="huge-copy pushv2">{{content}}</div>
+            <div class="article huge-copy pushv2">{{content}}</div>
             <div class="meta">{{friendlyTimestamp}}</div>
+            <div class="votesHolder">
+              <a href="voteup" class="vote up"  >&UP</a>
+              <span>||</span>
+              <a href="votedown" class="vote down">DOWN</a>
+              <!-- ...the contents of the item... -->
+            </div>
           </div>
 
           <div class="img avatar big pushv2 center">

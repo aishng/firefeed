@@ -7,70 +7,70 @@
 // alerts them out
 // change to storing them for searchability (add later)
 
-var hashTagList = [];
+// var hashTagList = [];
 
-function logHashList(){
-    hashTagList = [];
-    $('.highlight').each(function(){
-        hashTagList.push(this.innerHTML);
-    });
-    for(var i=0;i<hashTagList.length;i++){
-        print(hashTagList[i]);
-    }
-    if(hashTagList.length==0){
-        alert('You have not typed any hashtags');
-    }
-}
-$(function() {
+// function logHashList(){
+//     hashTagList = [];
+//     $('.highlight').each(function(){
+//         hashTagList.push(this.innerHTML);
+//     });
+//     for(var i=0;i<hashTagList.length;i++){
+//         print(hashTagList[i]);
+//     }
+//     if(hashTagList.length==0){
+//         alert('You have not typed any hashtags');
+//     }
+// }
+// $(function() {
 
-    var hashtags = false;
+//     var hashtags = false;
 
-    $(document).on('keydown', '#example-one', function (e) {        
-        arrow = {
-            hashtag: 51,
-            space: 32
-        };
+//     $(document).on('keydown', '#example-one', function (e) {        
+//         arrow = {
+//             hashtag: 51,
+//             space: 32
+//         };
 
-        var input_field = $(this);
-        switch (e.which) {
-            case arrow.hashtag:
-                e.preventDefault();
-                input_field.html(input_field.html() + "<span class='highlight'>#");
-                placeCaretAtEnd(this);
-                hashtags = true;
-                break;
-            case arrow.space:       
-                if(hashtags) {         
-                    e.preventDefault();
-                    input_field.html(input_field.html() + "</span>&nbsp;");    
-                    placeCaretAtEnd(this);
-                    hashtags = false;
-                }
-                break;
-        }
+//         var input_field = $(this);
+//         switch (e.which) {
+//             case arrow.hashtag:
+//                 e.preventDefault();
+//                 input_field.html(input_field.html() + "<span class='highlight'>#");
+//                 placeCaretAtEnd(this);
+//                 hashtags = true;
+//                 break;
+//             case arrow.space:       
+//                 if(hashtags) {         
+//                     e.preventDefault();
+//                     input_field.html(input_field.html() + "</span>&nbsp;");    
+//                     placeCaretAtEnd(this);
+//                     hashtags = false;
+//                 }
+//                 break;
+//         }
 
-    });
+//     });
 
-});
+// });
 
 
-function placeCaretAtEnd(el) {
-    el.focus();
-    if (typeof window.getSelection != "undefined"
-            && typeof document.createRange != "undefined") {
-        var range = document.createRange();
-        range.selectNodeContents(el);
-        range.collapse(false);
-        var sel = window.getSelection();
-        sel.removeAllRanges();
-        sel.addRange(range);
-    } else if (typeof document.body.createTextRange != "undefined") {
-        var textRange = document.body.createTextRange();
-        textRange.moveToElementText(el);
-        textRange.collapse(false);
-        textRange.select();
-    }
-}
+// function placeCaretAtEnd(el) {
+//     el.focus();
+//     if (typeof window.getSelection != "undefined"
+//             && typeof document.createRange != "undefined") {
+//         var range = document.createRange();
+//         range.selectNodeContents(el);
+//         range.collapse(false);
+//         var sel = window.getSelection();
+//         sel.removeAllRanges();
+//         sel.addRange(range);
+//     } else if (typeof document.body.createTextRange != "undefined") {
+//         var textRange = document.body.createTextRange();
+//         textRange.moveToElementText(el);
+//         textRange.collapse(false);
+//         textRange.select();
+//     }
+// }
 
 //UP & DOWN VOTES------------
 //UP & DOWN VOTES------------
