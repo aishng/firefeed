@@ -153,5 +153,19 @@ $("a.vote").live('click', voteClick);
         }
     }
 
+//FEEDBACK BOX ------------
+//FEEDBACK BOX ------------
+//FEEDBACK BOX ------------
+//FEEDBACK BOX ------------
 
+var feedbackRef = _firebase.child('userFeedback');
 
+// when you press enter store the feedback into the DB
+// clear the fields
+$('#feedback-input').keypress(function (e) {
+    if (e.keyCode == 13) {
+        var feedbackInput = $('#feedback-input').val();
+        feedbackRef.push({feedback: feedbackInput});
+        $('#feedback-input').val('Thank you for your feedback!');
+    }
+});
