@@ -1,0 +1,9 @@
+{
+  "firebase": "crowdwise",
+  "public": "index.html",
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
+}

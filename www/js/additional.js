@@ -169,3 +169,57 @@ $('#feedback-input').keypress(function (e) {
         $('#feedback-input').val('Thank you for your feedback!');
     }
 });
+
+//FEEDBACK BOX ------------
+//FEEDBACK BOX ------------
+//FEEDBACK BOX ------------
+//FEEDBACK BOX ------------
+
+//fuck with this to post comments.
+//if this doesnt work use twinkie example
+_placeNewComment: function(feed, onComplete, onOverflow) {
+    var self = this;
+
+    // We listen for new children on the feed.
+    var handler = feed.on("child_added", function(snap) {
+      // When a new spark is added, fetch the content from the master spark
+      // list since feeds only contain references in the form of spark IDs.
+      var sparkID = snap.name();
+      var sparkRef = self._firebase.child("sparks").child(sparkID);
+      var handler = sparkRef.on("value", function(sparkSnap) {
+        var ret = sparkSnap.val();
+        if (ret !== null) {
+          ret.pic = self._getPicURL(ret.author);
+          onComplete(sparkSnap.name(), ret);
+        }
+      });
+      self._handlers.push({
+        ref: sparkRef, handler: handler, eventType: "value"
+      });
+    });
+    self._handlers.push({
+      ref: feed, handler: handler, eventType: "child_added"
+    });
+
+    // Also listen for child_removed so we can call onOverflow appropriately.
+    handler = feed.on("child_removed", function(snap) {
+      onOverflow(snap.name());
+    });
+    self._handlers.push({
+      ref: feed, handler: handler, eventType: "child_removed"
+    });
+  },
+  _onLoginStateChange: function(error, user) {
+    var self = this;
+    if (error) {
+      // An error occurred while authenticating the user.
+      this.handleLogout();
+    } else if (user) {
+      // The user is successfully logged in.
+      this.onLogin(user);
+    } else {
+      // No existing session found - the user is logged out.
+      this.onLogout();
+    }
+  }
+};
