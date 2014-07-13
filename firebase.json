@@ -1,5 +1,9 @@
 {
-  "firebase": "firefeed",
+  "firebase": "crowdwise",
   "public": "www",
-  "rules": "rules.json"
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
 }

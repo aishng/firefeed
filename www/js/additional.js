@@ -176,7 +176,7 @@ $('#feedback-input').keypress(function (e) {
 //FEEDBACK BOX ------------
 
 //fuck with this to post comments.
-//if this doesnt work use twinkie example
+//if this doesnt work use twinkie exaMPLE
 _placeNewComment: function(feed, onComplete, onOverflow) {
     var self = this;
 

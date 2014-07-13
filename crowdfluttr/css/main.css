@@ -1,0 +1,109 @@
+@font-face {
+    font-family: ProximaNova;
+    src: url(../fonts/ProximaNovaRegular.otf);
+}
+
+h1 {
+	font: ProximaNova;
+}
+
+	.topBar {
+	height: 44px;
+	width: 100%;
+	background-color: white;
+}
+
+.mtImageDiv h1 {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 2%;
+	color: white;
+	font-size: 36px;
+}
+
+.mtImageDiv p {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 2%;
+	color: white;
+	font-size: 26px;
+	line-height: 1.5;
+}
+
+.learnMoreButton {
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #3083FF;
+	width: 314px;
+	height: 35px;
+	border: 1px #3083FF;
+	border-radius: 6px;
+	padding-top: 1%;
+	font-size: 22px;
+	box-shadow: 2px 2px 2px #005be3;
+}
+
+#learnMoreButtonLink {
+	color: white;
+	text-decoration: none;
+	margin: auto;
+	text-align: center;
+}
+
+.mtImageDiv {
+	height: auto;
+	width: 100%;
+	padding-top: 6%;
+	padding-bottom: 6%;
+	border-top: 1px #939598;
+	border-bottom: 1px #939598;
+	background-color: rgba(230,156,81, 0.50);
+	background-image: url(../images/mount.jpg);
+	background-size: 100%; 
+}
+
+.secondDiv {
+	background-color: rgba(230,156,81, 0.25);
+	height: auto;
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	overflow: hidden;
+}
+
+#videoHolder,
+.earlyAccessFormHolder {
+	float: left;
+	margin: 3%;
+}
+
+form input {
+	border-radius: 6px;
+	height: 38px;
+	width: 293px;
+	font-size: 24px;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+form span {
+	font-size: 24px;
+}
+
+#submit {
+	width: 300px;
+	height: 38px;
+	font-size: 22px;
+	background-color: #3083FF;
+	border: 1px #3083FF;
+	border-radius: 6px;
+	padding-top: 1%;
+	font-size: 22px;
+	box-shadow: 2px 2px 2px #005be3;
+	color: white;
+}
+
+/*body {
+	background-color: #E69C51;
+	opacity: 25;
+}*/

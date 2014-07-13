@@ -109,7 +109,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 /* General
 ============================================================ */
 body{
-  background: #B2E6FF;
+  background: #E8F8FF;
   font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
   font-size: 21px;
 }
@@ -578,6 +578,14 @@ label.checkbox input{margin-right: 5px;}
 ============================================================ */
 #search-result-list {
   margin: 15px;
+}
+
+#search-button {
+  color: white;
+}
+
+#searh-button:hover {
+  color: white;
 }
 
 #suggested-users {

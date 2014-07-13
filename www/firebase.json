@@ -1,6 +1,6 @@
 {
   "firebase": "crowdwise",
-  "public": "index.html",
+  "public": "www",
   "ignore": [
     "firebase.json",
     ".*",
